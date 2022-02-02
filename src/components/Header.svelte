@@ -19,8 +19,8 @@
 <nav>
     <h1>EPO App</h1>
     <div class="nav-links">
-        <Link to="/"><h2 class="nav-text">Pending Purchases</h2></Link>
-        <Link to="instructions"><h2 class="nav-text">Instructions</h2></Link>
-        <Link to="new"><h2 class="nav-text">New Purchase</Link>
+        <Link to="/"><button class="nav-text">Pending Purchases</button></Link>
+        <Link to="instructions"><button class="nav-text">Instructions</button></Link>
+        <Link to="new"><button class="nav-text">New Purchase</Link>
     </div>
 </nav>

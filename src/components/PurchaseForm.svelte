@@ -4,6 +4,7 @@ import { navigate } from "svelte-navigator";
 
     export let formData = {
         name: "",
+        requester: "",
         cost: 0,
         link: "",
         submitted: false,
@@ -55,6 +56,9 @@ import { navigate } from "svelte-navigator";
     <label for='item name'><h4>Item Name: </h4>
         <input type='text' name='name' bind:value={formData.name}/>
     </label>
+    <label for='requester'><h4>Requester: </h4>
+        <input type='text' name='requester' bind:value={formData.requester}/>
+    </label>
     <label for='cost'><h4>Cost: </h4>
         <input type='number' name='cost' bind:value={formData.cost}/>
     </label>
@@ -78,6 +82,9 @@ import { navigate } from "svelte-navigator";
 <form on:submit|preventDefault={editPurchase}>
     <label for='item name'><h4>Item Name: </h4>
         <input type='text' name='name' bind:value={formData.name}/>
+    </label>
+    <label for='requester'><h4>Requester: </h4>
+        <input type='text' name='requester' bind:value={formData.requester}/>
     </label>
     <label for='cost'><h4>Cost: </h4>
         <input type='number' name='cost' bind:value={formData.cost}/>
